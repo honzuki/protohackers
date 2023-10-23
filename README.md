@@ -1,1 +1,1 @@
-"# protohackers" 
+# protohackers
