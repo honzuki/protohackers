@@ -71,7 +71,7 @@ impl Deserialize for FromClient {
 
         let msg = match ty {
             message_type::PLATE => Self::Plate {
-                plate: String::deserialize(reader).await?,
+                plate: String::deserialize(reader).await?.trim().to_owned(),
                 timestamp: reader.read_u32().await?,
             },
             message_type::WANT_HEARTBEAT => Self::WantHeartbeat {

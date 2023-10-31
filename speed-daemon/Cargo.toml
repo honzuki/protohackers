@@ -8,5 +8,6 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.75"
 async-trait = "0.1.74"
+dashmap = "5.5.3"
 thiserror = "1.0.50"
-tokio = { version = "1.33.0", features = ["macros", "rt-multi-thread", "net", "io-util", "bytes"] }
+tokio = { version = "1.33.0", features = ["macros", "rt-multi-thread", "net", "io-util", "bytes", "sync", "time"] }
